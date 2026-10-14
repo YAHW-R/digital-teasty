@@ -1,0 +1,211 @@
+{
+  "version": 2,
+  "types": {
+    "covenant": {
+      "label": "Pacto",
+      "message": "Un pacto no se rompe porque tú fallen, sino porque Él cumple."
+    },
+    "blessing": {
+      "label": "Bendición",
+      "message": "Lo que Dios bendice multiplica. No tienes que forcejearlo."
+    },
+    "protection": {
+      "label": "Protección",
+      "message": "Lo que Él cubre con su mano, nadie te lo puede quitar."
+    },
+    "provision": {
+      "label": "Provisión",
+      "message": "Él ya contó antes de que tú lo pidieras. Tu necesidad no lo sorprende."
+    },
+    "deliverance": {
+      "label": "Liberación",
+      "message": "Hay ataduras que solo se rompen cuando Él interviene."
+    },
+    "healing": {
+      "label": "Sanidad",
+      "message": "Su mano también sana. Llévatela hasta donde te duele."
+    },
+    "answered_prayer": {
+      "label": "Respuesta",
+      "message": "Él oyó. Y lo que oyó, lo hizo."
+    },
+    "restoration": {
+      "label": "Restauración",
+      "message": "Lo que se rompió, Él lo recompone. Vuelve a empezar donde te caíste."
+    },
+    "guidance": {
+      "label": "Guía",
+      "message": "No estás perdido: hay alguien guiando tus pasos."
+    },
+    "salvation": {
+      "label": "Salvación",
+      "message": "La promesa más grande de todas: Él vino a buscarte."
+    },
+    "other": {
+      "label": "Promesa",
+      "message": "Y esto también es palabra de Dios sobre tu vida."
+    }
+  },
+  "templates": [
+    {
+      "id": "nocturno",
+      "name": "Nocturno",
+      "style": "nocturne",
+      "theme": {
+        "bg": "#05070f",
+        "surface": "rgba(255,255,255,0.055)",
+        "border": "rgba(255,255,255,0.13)",
+        "text": "#f3f6ff",
+        "muted": "rgba(243,246,255,0.62)",
+        "accent": "#e6c07a",
+        "onAccent": "#1b1305",
+        "themeColor": "#05070f"
+      },
+      "copy": {
+        "kicker": "Promesa del día",
+        "title": "La palabra que te sostiene hoy",
+        "cta": "Otra promesa",
+        "share": "Compartir",
+        "gospel": [
+          "Dios no dejó sus promesas en el vacío: las cumplió en su Hijo. Lo que Él prometió, Él lo sostiene.",
+          "Esta promesa no es un adorno para leer y olvidar. Es una invitación a poner tu nombre hoy debajo de la suya.",
+          "El que cumple lo que promete puede cumplir esto. No lo mires desde tu miedo, míralo desde su carácter."
+        ],
+        "typeMessage": {
+          "protection": "Lo que Él guarda, nadie lo alcanza. Duerme tranquilo.",
+          "salvation": "Esta es su promesa más grande: vino a buscarte a ti."
+        },
+        "footer": "Vuelve cuando necesites una palabra.",
+        "invitation": "Las promesas de Dios tienen un nombre: Jesús. Si hoy todavía no le has entregado tu vida, este es el momento."
+      }
+    },
+    {
+      "id": "papel",
+      "name": "Papel",
+      "style": "paper",
+      "theme": {
+        "bg": "#f7f1e4",
+        "surface": "#fffdf7",
+        "border": "#e2d7c0",
+        "text": "#241f18",
+        "muted": "#8a7a5e",
+        "accent": "#9a6b2f",
+        "onAccent": "#fffdf7",
+        "themeColor": "#f7f1e4"
+      },
+      "copy": {
+        "kicker": "Palabra de hoy",
+        "title": "Una página escrita para ti",
+        "invitation": "Las Escrituras tienen un Autor. ¿Ya le creíste, o solo las estás leyendo como un texto más?",
+        "cta": "Leer otra",
+        "share": "Enviar",
+        "gospel": [
+          "Antes de que nacieras, Dios ya había escrito tu nombre en esta página.",
+          "La Biblia no es un libro antiguo: es una carta con tu nombre, y todavía está en pie.",
+          "Él no promete lo que no puede cumplir. Por eso esta página puede sostenerte."
+        ],
+        "typeMessage": {
+          "provision": "Lo necesario ya está contado. No vas con las manos vacías.",
+          "guidance": "Cuando no ves el siguiente paso, es que ya te lo dio."
+        },
+        "footer": "Guárdala. Vuelve a leerla cuando el día se ponga difícil."
+      }
+    },
+    {
+      "id": "amanecer",
+      "name": "Amanecer",
+      "style": "sunrise",
+      "theme": {
+        "bg": "#ff8f7a",
+        "surface": "rgba(255,255,255,0.86)",
+        "border": "rgba(255,255,255,0.7)",
+        "text": "#3a1730",
+        "muted": "rgba(58,23,48,0.66)",
+        "accent": "#ef4f8a",
+        "onAccent": "#ffffff",
+        "themeColor": "#ff8f7a"
+      },
+      "copy": {
+        "kicker": "Mensaje para ti",
+        "title": "Dios tiene algo que decirte hoy",
+        "cta": "Dame otra",
+        "share": "Compartir",
+        "gospel": [
+          "No la leas como si fuera para otro. Es para ti. Léela otra vez, en voz alta.",
+          "Él dijo que cuida, y lo cumplió. También te cuida a ti, hoy.",
+          "Lo que leas a las siete de la mañana te va a alcanzar en la noche de hoy."
+        ],
+        "typeMessage": {
+          "healing": "Su mano sana lo que nadie pudo sanar. Llévasela.",
+          "answered_prayer": "Lo que pediste, ya fue contestado. Fíjate bien."
+        },
+        "footer": "Si alguien necesitaba leer esto, reenvíaselo.",
+        "invitation": "Él lo promete y lo cumple. Si hoy es tu día, dilo en voz alta y empieza a caminar con Él."
+      }
+    },
+    {
+      "id": "celeste",
+      "name": "Celeste",
+      "style": "sky",
+      "theme": {
+        "bg": "#e9f3ff",
+        "surface": "rgba(255,255,255,0.62)",
+        "border": "rgba(30,64,175,0.16)",
+        "text": "#152c62",
+        "muted": "rgba(21,44,98,0.6)",
+        "accent": "#2a5bd7",
+        "onAccent": "#ffffff",
+        "themeColor": "#e9f3ff"
+      },
+      "copy": {
+        "kicker": "Palabra",
+        "title": "Del cielo, para hoy",
+        "cta": "Siguiente",
+        "share": "Compartir",
+        "gospel": [
+          "El cielo no miente. Tampoco la palabra que acabas de abrir.",
+          "Él mira desde arriba lo que tú no alcanzas a ver. Ya lo resolvió.",
+          "Si alguien leyó esto, fue porque alguien lo pidió por ti o porque Él lo inició."
+        ],
+        "typeMessage": {
+          "covenant": "Los pactos de Dios dependen de Él, no de tu rendimiento.",
+          "deliverance": "Hay cadenas que hoy no terminan donde terminaban ayer."
+        },
+        "footer": "Cada escaneo es una palabra nueva.",
+        "invitation": "Esta palabra llegó hasta aquí por algo. Si es para ti, no la dejes pasar."
+      }
+    },
+    {
+      "id": "bosque",
+      "name": "Bosque",
+      "style": "forest",
+      "theme": {
+        "bg": "#0b1f18",
+        "surface": "rgba(255,255,255,0.05)",
+        "border": "rgba(255,255,255,0.11)",
+        "text": "#eef8f2",
+        "muted": "rgba(238,248,242,0.6)",
+        "accent": "#7fd1a6",
+        "onAccent": "#0a2418",
+        "themeColor": "#0b1f18"
+      },
+      "copy": {
+        "kicker": "Raíz",
+        "title": "Firme como una raíz",
+        "cta": "Raíz nueva",
+        "share": "Compartir",
+        "gospel": [
+          "Como la raíz sostiene el árbol, Dios sostiene tu vida. No caminas solo.",
+          "No tienes que entenderlo para vivirlo. Primero llega la lluvia, después el árbol.",
+          "Él es la raíz. Esta promesa es solo la prueba de que sigues plantado."
+        ],
+        "typeMessage": {
+          "protection": "Cuando vienen las tormentas, hay manos que sostienen.",
+          "restoration": "Después de la sequía hay árbol. Vuelve a crecer."
+        },
+        "footer": "Lo que tiene raíz no lo mueve el viento.",
+        "invitation": "De la promesa a la vida hay un paso: confiar. ¿Lo das hoy?"
+      }
+    }
+  ]
+}
