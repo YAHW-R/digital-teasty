@@ -46,6 +46,14 @@
       "message": "Y esto también es palabra de Dios sobre tu vida."
     }
   },
+  "church": {
+    "label": "Te esperamos",
+    "name": "Centro Cristiano de Avivamiento Rey de Reyes",
+    "address": "Av. Santos Erminy, frente a la Torre Mega II",
+    "city": "Sabana Grande, Caracas",
+    "instagram": "https://www.instagram.com/reydereyes.caracas/",
+    "youtube": "https://www.youtube.com/@reydereyes-caracas4198"
+  },
   "templates": [
     {
       "id": "nocturno",

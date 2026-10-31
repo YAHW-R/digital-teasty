@@ -7,7 +7,7 @@ export const config = {
 import promises from './promises.json';
 import catalog from './templates.json';
 
-const { types: TYPES, templates: TEMPLATES } = catalog;
+const { types: TYPES, templates: TEMPLATES, church: CHURCH } = catalog;
 
 /* ------------------------------------------------------------------ *
  * Utilidades
@@ -102,9 +102,24 @@ body{
 .btn:active{transform:scale(.97)}
 .btn.primary{background:var(--accent);color:var(--on-accent)}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--border)}
+.church{margin:1.6rem 0 0}
+.church-label{display:flex;align-items:center;gap:.7rem;margin:0;font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.church-label::before,.church-label::after{content:"";flex:1;height:1px;background:var(--border)}
+.church-name{margin:.8rem 0 0;font-size:.82rem;font-weight:600;line-height:1.5;text-wrap:balance}
+.church-address{margin:.35rem auto 0;max-width:22rem;font-size:.72rem;line-height:1.5;color:var(--muted);text-wrap:pretty}
+.church-links{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:.75rem 0 0}
+.church-link{
+  display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:0 .9rem;
+  border:1px solid var(--border);border-radius:999px;
+  font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  text-decoration:none;color:var(--accent);-webkit-tap-highlight-color:transparent;
+  transition:transform .12s ease;
+}
+.church-link svg{width:15px;height:15px}
+.church-link:active{transform:scale(.97)}
 .footer{margin:1.35rem 0 0;font-size:.7rem;line-height:1.5;color:var(--muted);text-wrap:pretty}
 @media (min-width:26rem){.actions{flex-direction:row}.btn{flex:1}}
-@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){.btn,.church-link{transition:none}}
 `;
 
 // Cada plantilla aporta su propio fondo, radios, sombra y tipografía.
@@ -134,6 +149,8 @@ const STYLE_CSS = {
 .s-paper .gospel-label{font-family:var(--serif);font-style:italic;font-size:.8rem;text-transform:none;letter-spacing:.04em}
 .s-paper .btn{border-radius:6px}
 .s-paper .btn.primary{background:var(--text);color:var(--on-accent)}
+.s-paper .church-label{font-family:var(--serif);font-style:italic;font-weight:400;font-size:.8rem;letter-spacing:.04em;text-transform:none}
+.s-paper .church-link{border-radius:5px;letter-spacing:.1em}
 `,
   // amanecer, degradado cálido y tipografía marcada
   sunrise: `
@@ -194,6 +211,12 @@ const ART = {
   sky: `<svg class="art" viewBox="0 0 320 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="250" cy="42" r="19" fill="#ffd76a"/><path d="M250 6v8M280 18l6 6M286 42h8M280 66l6-6M220 18l-6 6M214 42h-8M220 66l-6-6" fill="none" stroke="#ffd76a" stroke-width="5" stroke-linecap="round"/><g fill="#fff" opacity=".95"><ellipse cx="100" cy="88" rx="40" ry="18"/><ellipse cx="134" cy="76" rx="28" ry="24"/><ellipse cx="68" cy="94" rx="25" ry="14"/><rect x="40" y="90" width="122" height="18" rx="9"/></g><path d="M196 100l-13 13M218 106l-13 13M240 100l-13 13" fill="none" stroke="#2a5bd7" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/></svg>`,
   // Sierra, pinos y luna
   forest: `<svg class="art" viewBox="0 0 320 140" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="34" r="16" fill="#9ee0bd" opacity=".5"/><path d="M0 140V94l56-40 38 26 34-42 56 62z" fill="#1e5340" opacity=".7"/><g fill="#0c2a1f" opacity=".9"><path d="M96 140v-46l-20 24h12l-22 22h60l-22-22h12z"/></g><path d="M0 140v-24l70-34 44 28 38-24 60 54z" fill="#2c7053" opacity=".55"/><g fill="#0a2219" opacity=".9"><path d="M238 140v-40l-17 21h10l-20 19h54l-20-19h10z"/><path d="M292 140v-30l-13 16h8l-15 14h40l-15-14h8z"/></g></svg>`,
+};
+
+// Glifos de las dos redes: SVG en línea, sin peticiones ni licencias externas
+const ICONS = {
+  instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>`,
+  youtube: `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>`,
 };
 
 const themeVars = (theme) =>
@@ -269,6 +292,15 @@ ${longVerse ? '<details class="more"><summary>Leer el texto completo</summary></
 <a class="btn primary" href="${nextUrl}">${esc(copy.cta)}</a>
 <a class="btn ghost" href="${shareUrl}" target="_blank" rel="noopener">${esc(copy.share)}</a>
 </nav>
+<aside class="church">
+<p class="church-label">${esc(CHURCH.label)}</p>
+<p class="church-name">${esc(CHURCH.name)}</p>
+<p class="church-address">${esc(CHURCH.address)}<br>${esc(CHURCH.city)}</p>
+<div class="church-links">
+<a class="church-link" href="${esc(CHURCH.instagram)}" target="_blank" rel="noopener" aria-label="Rey de Reyes en Instagram">${ICONS.instagram}Instagram</a>
+<a class="church-link" href="${esc(CHURCH.youtube)}" target="_blank" rel="noopener" aria-label="Rey de Reyes en YouTube">${ICONS.youtube}YouTube</a>
+</div>
+</aside>
 <p class="footer">${esc(copy.footer)}</p>
 </main>
 </body>
